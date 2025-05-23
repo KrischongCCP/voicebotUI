@@ -1,0 +1,513 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f5] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#111518]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_319)">
+                  <path
+                    d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_6_319"><rect width="48" height="48" fill="white"></rect></clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h2 class="text-[#111518] text-lg font-bold leading-tight tracking-[-0.015em]">Meeting Summarizer</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#111518] text-sm font-medium leading-normal" href="#">Dashboard</a>
+              <a class="text-[#111518] text-sm font-medium leading-normal" href="#">History</a>
+              <a class="text-[#111518] text-sm font-medium leading-normal" href="#">Templates</a>
+              <a class="text-[#111518] text-sm font-medium leading-normal" href="#">Settings</a>
+            </div>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAYUrP-9ZK_8orFj7-jV-CBIsh-GJ0aR3kHEMp5UC2phPMPuL3tRt_4kc7y9Kx3SP8vb2HxZiGLOsR5E0VA77IFfxgw07i-uUO116zTGcCqF_NnpX4WW2Mg9-8Guxf859HFCriM0uAc27sfQJdITbAjQPWFxVPmxiunVqh6TDB_00x91qZoYMGQ9dYn191fPdmQZCN01Nqg_yoVtLh7t9Z7BbM8FumHouJneQUJzQDjvqYMuXNav4JHPQ5dp4Zb4Jhqq1Sc5gXtyNAT");'
+            ></div>
+          </div>
+        </header>
+        <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[920px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#111518] tracking-light text-[32px] font-bold leading-tight min-w-72">Record History</p></div>
+            <div class="flex flex-wrap gap-4 p-4">
+              <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 border border-[#dbe1e6]">
+                <p class="text-[#111518] text-base font-medium leading-normal">Total Meetings</p>
+                <p class="text-[#111518] tracking-light text-2xl font-bold leading-tight">120</p>
+                <p class="text-[#078838] text-base font-medium leading-normal">+10%</p>
+              </div>
+              <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 border border-[#dbe1e6]">
+                <p class="text-[#111518] text-base font-medium leading-normal">Pending</p>
+                <p class="text-[#111518] tracking-light text-2xl font-bold leading-tight">10</p>
+                <p class="text-[#e73908] text-base font-medium leading-normal">-5%</p>
+              </div>
+              <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 border border-[#dbe1e6]">
+                <p class="text-[#111518] text-base font-medium leading-normal">Completed</p>
+                <p class="text-[#111518] tracking-light text-2xl font-bold leading-tight">110</p>
+                <p class="text-[#078838] text-base font-medium leading-normal">+15%</p>
+              </div>
+            </div>
+            <div class="px-4 py-3 @container">
+              <div class="flex overflow-hidden rounded-xl border border-[#dbe1e6] bg-white">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-white">
+                      <th class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-120 px-4 py-3 text-left text-[#111518] w-60 text-sm font-medium leading-normal">Status</th>
+                      <th class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-240 px-4 py-3 text-left text-[#111518] w-[400px] text-sm font-medium leading-normal">
+                        File Name
+                      </th>
+                      <th class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-360 px-4 py-3 text-left text-[#111518] w-[400px] text-sm font-medium leading-normal">
+                        Speaker(s)
+                      </th>
+                      <th class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-480 px-4 py-3 text-left text-[#111518] w-60 text-[#60768a] text-sm font-medium leading-normal">
+                        Speaker Mapping
+                      </th>
+                      <th class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-600 px-4 py-3 text-left text-[#111518] w-60 text-[#60768a] text-sm font-medium leading-normal">
+                        Transcript
+                      </th>
+                      <th class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-720 px-4 py-3 text-left text-[#111518] w-60 text-[#60768a] text-sm font-medium leading-normal">
+                        Minutes
+                      </th>
+                      <th class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-840 px-4 py-3 text-left text-[#111518] w-[400px] text-sm font-medium leading-normal">
+                        Create Date
+                      </th>
+                      <th class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-960 px-4 py-3 text-left text-[#111518] w-60 text-[#60768a] text-sm font-medium leading-normal">
+                        Template Selection
+                      </th>
+                      <th class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-1080 px-4 py-3 text-left text-[#111518] w-60 text-[#60768a] text-sm font-medium leading-normal">
+                        Language Selection
+                      </th>
+                      <th class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-1200 px-4 py-3 text-left text-[#111518] w-60 text-[#60768a] text-sm font-medium leading-normal">
+                        Download
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t border-t-[#dbe1e6]">
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-120 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#f0f2f5] text-[#111518] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Completed</span>
+                        </button>
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#111518] text-sm font-normal leading-normal">
+                        Project Alpha Kickoff
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#60768a] text-sm font-normal leading-normal">
+                        Sarah, David
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-480 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-600 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-720 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-840 h-[72px] px-4 py-2 w-[400px] text-[#60768a] text-sm font-normal leading-normal">
+                        2024-07-26
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-960 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Standard
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-1080 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        English
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-1200 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Download
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dbe1e6]">
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-120 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#f0f2f5] text-[#111518] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Processing</span>
+                        </button>
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#111518] text-sm font-normal leading-normal">
+                        Client Beta Feedback
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#60768a] text-sm font-normal leading-normal">
+                        Emily, Mark
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-480 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-600 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-720 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-840 h-[72px] px-4 py-2 w-[400px] text-[#60768a] text-sm font-normal leading-normal">
+                        2024-07-25
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-960 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Agile
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-1080 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        English
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-1200 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Download
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dbe1e6]">
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-120 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#f0f2f5] text-[#111518] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Error</span>
+                        </button>
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#111518] text-sm font-normal leading-normal">
+                        Team Sync
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#60768a] text-sm font-normal leading-normal">
+                        Jessica, Kevin
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-480 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-600 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-720 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-840 h-[72px] px-4 py-2 w-[400px] text-[#60768a] text-sm font-normal leading-normal">
+                        2024-07-24
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-960 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Action Items
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-1080 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        English
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-1200 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Download
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dbe1e6]">
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-120 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#f0f2f5] text-[#111518] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Completed</span>
+                        </button>
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#111518] text-sm font-normal leading-normal">
+                        Design Review
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#60768a] text-sm font-normal leading-normal">
+                        Olivia, Ethan
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-480 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-600 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-720 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-840 h-[72px] px-4 py-2 w-[400px] text-[#60768a] text-sm font-normal leading-normal">
+                        2024-07-23
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-960 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Standard
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-1080 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        English
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-1200 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Download
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dbe1e6]">
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-120 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#f0f2f5] text-[#111518] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Completed</span>
+                        </button>
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#111518] text-sm font-normal leading-normal">
+                        Marketing Strategy
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#60768a] text-sm font-normal leading-normal">
+                        Sophia, Ryan
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-480 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-600 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-720 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-840 h-[72px] px-4 py-2 w-[400px] text-[#60768a] text-sm font-normal leading-normal">
+                        2024-07-22
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-960 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Agile
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-1080 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        English
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-1200 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Download
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dbe1e6]">
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-120 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#f0f2f5] text-[#111518] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Processing</span>
+                        </button>
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#111518] text-sm font-normal leading-normal">
+                        Product Roadmap
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#60768a] text-sm font-normal leading-normal">
+                        Ava, Liam
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-480 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-600 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-720 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-840 h-[72px] px-4 py-2 w-[400px] text-[#60768a] text-sm font-normal leading-normal">
+                        2024-07-21
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-960 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Action Items
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-1080 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        English
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-1200 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Download
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dbe1e6]">
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-120 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#f0f2f5] text-[#111518] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Completed</span>
+                        </button>
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#111518] text-sm font-normal leading-normal">
+                        Sales Update
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#60768a] text-sm font-normal leading-normal">
+                        Isabella, Noah
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-480 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-600 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-720 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-840 h-[72px] px-4 py-2 w-[400px] text-[#60768a] text-sm font-normal leading-normal">
+                        2024-07-20
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-960 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Standard
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-1080 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        English
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-1200 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Download
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dbe1e6]">
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-120 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#f0f2f5] text-[#111518] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Completed</span>
+                        </button>
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#111518] text-sm font-normal leading-normal">
+                        Customer Support
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#60768a] text-sm font-normal leading-normal">
+                        Mia, Oliver
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-480 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-600 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-720 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-840 h-[72px] px-4 py-2 w-[400px] text-[#60768a] text-sm font-normal leading-normal">
+                        2024-07-19
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-960 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Agile
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-1080 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        English
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-1200 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Download
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dbe1e6]">
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-120 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#f0f2f5] text-[#111518] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Error</span>
+                        </button>
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#111518] text-sm font-normal leading-normal">
+                        Financial Planning
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#60768a] text-sm font-normal leading-normal">
+                        Amelia, Elijah
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-480 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-600 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-720 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-840 h-[72px] px-4 py-2 w-[400px] text-[#60768a] text-sm font-normal leading-normal">
+                        2024-07-18
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-960 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Action Items
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-1080 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        English
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-1200 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Download
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dbe1e6]">
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-120 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#f0f2f5] text-[#111518] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Completed</span>
+                        </button>
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#111518] text-sm font-normal leading-normal">
+                        HR Onboarding
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#60768a] text-sm font-normal leading-normal">
+                        Grace, William
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-480 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-600 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-720 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        View
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-840 h-[72px] px-4 py-2 w-[400px] text-[#60768a] text-sm font-normal leading-normal">
+                        2024-07-17
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-960 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Standard
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-1080 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        English
+                      </td>
+                      <td class="table-9c977955-b649-471c-8ccf-368cf59926a7-column-1200 h-[72px] px-4 py-2 w-60 text-[#60768a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Download
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <style>
+                          @container(max-width:120px){.table-9c977955-b649-471c-8ccf-368cf59926a7-column-120{display: none;}}
+                @container(max-width:240px){.table-9c977955-b649-471c-8ccf-368cf59926a7-column-240{display: none;}}
+                @container(max-width:360px){.table-9c977955-b649-471c-8ccf-368cf59926a7-column-360{display: none;}}
+                @container(max-width:480px){.table-9c977955-b649-471c-8ccf-368cf59926a7-column-480{display: none;}}
+                @container(max-width:600px){.table-9c977955-b649-471c-8ccf-368cf59926a7-column-600{display: none;}}
+                @container(max-width:720px){.table-9c977955-b649-471c-8ccf-368cf59926a7-column-720{display: none;}}
+                @container(max-width:840px){.table-9c977955-b649-471c-8ccf-368cf59926a7-column-840{display: none;}}
+                @container(max-width:960px){.table-9c977955-b649-471c-8ccf-368cf59926a7-column-960{display: none;}}
+                @container(max-width:1080px){.table-9c977955-b649-471c-8ccf-368cf59926a7-column-1080{display: none;}}
+                @container(max-width:1200px){.table-9c977955-b649-471c-8ccf-368cf59926a7-column-1200{display: none;}}
+              </style>
+            </div>
+          </div>
+          <div class="layout-content-container flex flex-col w-[360px]">
+            <h2 class="text-[#111518] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Record Details</h2>
+            <h1 class="text-[#111518] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 text-left pb-3 pt-5">Project Alpha Kickoff</h1>
+            <h3 class="text-[#111518] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Keynotes/Highlights</h3>
+            <p class="text-[#111518] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              The project kickoff meeting for Project Alpha was held on July 26, 2024, with key participants Sarah and David. The meeting focused on outlining the project scope,
+              objectives, and initial tasks. Key action items were assigned, and a timeline was established for the first phase of development. The team discussed potential
+              challenges and mitigation strategies, ensuring a clear understanding of roles and responsibilities.
+            </p>
+            <h3 class="text-[#111518] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Chatbot</h3>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <input
+                  placeholder="Ask a question about the transcript"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111518] focus:outline-0 focus:ring-0 border border-[#dbe1e6] bg-white focus:border-[#dbe1e6] h-14 placeholder:text-[#60768a] p-[15px] text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex px-4 py-3 justify-end">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#0b80ee] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Send</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
